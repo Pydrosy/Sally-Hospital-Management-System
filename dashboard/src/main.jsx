@@ -1,10 +1,14 @@
-import ReactDOM from "react-dom/client";
+// src/main.jsx
 import React from "react";
-import AppWrapper from "../context/AppWrapper.jsx"; // import the wrapper
-
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import AppWrapper from "./context/AppWrapper.jsx";
+import "./App.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AppWrapper />
+    <AppWrapper>
+      <App />
+    </AppWrapper>
   </React.StrictMode>
 );
